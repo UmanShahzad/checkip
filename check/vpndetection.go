@@ -11,7 +11,7 @@ import (
 var vpnDetectionUrl = "https://api.vpndetection.io"
 
 // vpnDetection is what VPNDetection knows about an IP address. The proxy
-// flags come only with a paid plan's key; a free key leaves them false.
+// flags come with a key's full answers, and are false past them.
 type vpnDetection struct {
 	IP         string `json:"ip"`
 	IsVPN      bool   `json:"is_vpn"`
